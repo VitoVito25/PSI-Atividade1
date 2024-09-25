@@ -1,4 +1,3 @@
-package atividade1;
 public class Game {
 
     private int targetNumber;
@@ -6,11 +5,11 @@ public class Game {
     private int attemptCount;
     private boolean finishedStatus;
 
-    public void start(int targetNumber) {
-        setTargetNumber(targetNumber);
-        setAttemptNumber(0);
-        setAttemptCount(0);
-        setFinishedStatus(false);
+    public Game(int targetNumber) {
+        this.targetNumber = targetNumber;
+        this.attemptNumber = 0;
+        this.attemptCount = 0;
+        this.finishedStatus = false; 
     }
 
     public int getTargetNumber() {
@@ -44,4 +43,5 @@ public class Game {
     public void setFinishedStatus(boolean finishedStatus) {
         this.finishedStatus = finishedStatus;
     }
+
 }
