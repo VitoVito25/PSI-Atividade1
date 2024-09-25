@@ -6,6 +6,13 @@ public class Game {
     private int attemptCount;
     private boolean finishedStatus;
 
+    public void start(int targetNumber) {
+        setTargetNumber(targetNumber);
+        setAttemptNumber(0);
+        setAttemptCount(0);
+        setFinishedStatus(false);
+    }
+
     public int getTargetNumber() {
         return targetNumber;
     }
