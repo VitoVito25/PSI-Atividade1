@@ -1,11 +1,12 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.Random;
 
 public class Main {
 
     public static int generateRandomNumber(int minNumber, int maxNumber) {
-        
-        return (int)(Math.random() * (maxNumber - minNumber + 1)) + minNumber;
+        Random random = new Random();
+        return random.nextInt((maxNumber - minNumber) + 1) + minNumber;
     }
 
     public static void clearConsole() {
@@ -57,7 +58,6 @@ public class Main {
                 Game match = new Game(randomNumber);
     
                 System.out.printf("Partida e numero aleatorio entre %d e %d gerado! \n", minNumber, maxNumber);
-                System.out.println(randomNumber);
                 
                 do {
                     System.out.println("De um palpite sobre qual o numero aleatório: ");
