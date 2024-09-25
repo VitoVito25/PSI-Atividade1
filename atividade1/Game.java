@@ -1,10 +1,11 @@
-public class game {
+package atividade1;
+public class Game {
 
     private int targetNumber;
     private int attemptNumber;
     private int attemptCount;
-    private boolean finisheStatus;
-    
+    private boolean finishedStatus;
+
     public int getTargetNumber() {
         return targetNumber;
     }
@@ -29,12 +30,11 @@ public class game {
         this.attemptCount = attemptCount;
     }
 
-    public boolean getFinishe() {
-        return finisheStatus;
+    public boolean isFinished() {
+        return finishedStatus;
     }
 
-    public void setFinisheStatus(boolean finishedStatus) {
-        this.finisheStatus = finishedStatus;
+    public void setFinishedStatus(boolean finishedStatus) {
+        this.finishedStatus = finishedStatus;
     }
-
 }
