@@ -44,4 +44,18 @@ public class Game {
         this.finishedStatus = finishedStatus;
     }
 
+    public void tryAttempt(int attemptNumber) {
+        this.attemptNumber = attemptNumber;
+        this.attemptCount = this.attemptCount + 1;
+        if(this.attemptNumber == this.targetNumber) {
+            this.finishedStatus = true;
+        } else {
+            if(attemptNumber > targetNumber) {
+                System.out.println("O numero sorteado esta abaixo do que você indicou.");
+            } else {
+                System.out.println("O numero sorteado esta acima do que você indicou.");
+            }
+        }
+    }
+
 }
